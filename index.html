@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Секреты памяти для школьников ESO и Bachillerato. Онлайн-курс, который помогает ребенку быстрее запоминать слова, даты, формулы и тексты без бесконечной зубрежки." />
+  <title>Секреты памяти для школьников</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Секреты памяти">
+      <span class="brand-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M9 4.5a3 3 0 0 0-3 3v.2A3.4 3.4 0 0 0 4 11a3.4 3.4 0 0 0 2 3.2v.3a3 3 0 0 0 3 3h.3A3.2 3.2 0 0 0 12 20a3.2 3.2 0 0 0 2.7-2.5h.3a3 3 0 0 0 3-3v-.3a3.4 3.4 0 0 0 2-3.2 3.4 3.4 0 0 0-2-3.3v-.2a3 3 0 0 0-3-3 3.3 3.3 0 0 0-3 2 3.3 3.3 0 0 0-3-2Z"/><path d="M12 6.5v13"/><path d="M8 9h2.5"/><path d="M13.5 9H16"/><path d="M8 13h2.5"/><path d="M13.5 13H16"/></svg>
+      </span>
+      <span data-i18n="brand">Секреты памяти</span>
+    </a>
+    <nav class="main-nav" aria-label="Главная навигация">
+      <a href="#about" data-i18n="nav_about">О курсе</a>
+      <a href="#program" data-i18n="nav_program">Программа</a>
+      <a href="#formats" data-i18n="nav_formats">Форматы</a>
+      <a href="#reviews" data-i18n="nav_reviews">Отзывы</a>
+      <a href="#socials" data-i18n="nav_socials">Соцсети</a>
+      <a href="#faq" data-i18n="nav_faq">FAQ</a>
+    </nav>
+
+    <div class="lang-switch" aria-label="Переключатель языка">
+      <button class="lang-btn is-active" type="button" data-lang="ru">RU</button>
+      <button class="lang-btn" type="button" data-lang="uk">UA</button>
+    </div>
+    <a class="header-cta" href="#formats" data-i18n="header_cta">Курсы</a>
+    <button class="menu-toggle" type="button" aria-label="Открыть меню">☰</button>
+  </header>
+
+  <main>
+    <section class="hero section-pad">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow" data-i18n="hero_eyebrow">Курс для школьников ESO и Bachillerato</div>
+          <h1 data-i18n="hero_title">Секреты памяти для <span>учебы</span> и языков</h1>
+          <p class="hero-lead" data-i18n="hero_lead">Практический онлайн-курс, где ребенок освоит техники памяти и научится запоминать иностранные слова, даты, формулы, термины и тексты без зубрежки.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#formats" data-i18n="hero_btn_format">Смотреть форматы курса</a>
+            <a class="btn btn-secondary" href="#contact" data-i18n="hero_btn_question">Задать вопрос</a>
+          </div>
+          <div class="hero-points" aria-label="Ключевые преимущества">
+            <span>ESO и Bachillerato</span>
+            <span data-i18n="hero_point_formats">Запись, группа или индивидуально</span>
+            <span>Valencia / Online</span>
+          </div>
+        </div>
+
+        <div class="video-card reveal" aria-label="Видео о курсе">
+          <a class="video-window" href="https://www.youtube.com/watch?v=MwusUcJB0NE&t=2s" target="_blank" rel="noopener" aria-label="Смотреть видео от Алексея на YouTube">
+            <img src="assets/group-photo.png" alt="Алексей Бессонов с учениками" />
+            <button class="play-button" type="button" aria-label="Воспроизвести видео"></button>
+            <div class="video-caption">
+              <strong data-i18n="video_alex">Видео от Алексея</strong>
+              <span data-i18n="video_caption">О себе, формате курса и том, как проходят занятия</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="container hero-benefits reveal">
+        <div class="mini-benefit">
+          <span class="mini-icon">🧠</span>
+          <strong data-i18n="mini_memory">Память</strong>
+        </div>
+        <div class="mini-benefit">
+          <span class="mini-icon">🎯</span>
+          <strong data-i18n="mini_focus">Концентрация</strong>
+        </div>
+        <div class="mini-benefit">
+          <span class="mini-icon">📘</span>
+          <strong data-i18n="mini_texts">Работа с текстами</strong>
+        </div>
+        <div class="mini-benefit">
+          <span class="mini-icon">✨</span>
+          <strong data-i18n="mini_confidence">Уверенность</strong>
+        </div>
+      </div>
+    </section>
+
+  <section class="section-pad soft about-fit" id="about">
+      <div class="container about-fit-grid">
+        <div class="about-visual reveal">
+          <div class="about-photo-shell">
+            <span class="about-decor about-decor-left" aria-hidden="true">✦</span>
+            <span class="about-decor about-decor-top" aria-hidden="true">🌐</span>
+
+            <div class="about-photo-wrap">
+              <img src="assets/about-group-photo.png" alt="Алексей Бессонов с учениками курса" />
+            </div>
+
+            <div class="about-floating-card">
+              <span class="about-floating-icon">🎓</span>
+              <div>
+                <strong data-i18n="floating_title">Учись легче</strong>
+                <span data-i18n="floating_text">Запоминай больше. Чувствуй уверенность.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content reveal">
+          <h2 data-i18n="about_title">Кому <span>подойдет</span> курс</h2>
+
+          <p class="about-lead" data-i18n="about_lead">Курс для школьников ESO и Bachillerato, которым важно легче учить иностранные языки, лучше запоминать школьные темы и увереннее готовиться к урокам.</p>
+
+          <div class="about-list">
+            <div class="about-list-item">
+              <span class="about-list-icon">📖</span>
+              <p data-i18n="about_item_1">Сложно запоминать иностранные слова и правила</p>
+            </div>
+
+            <div class="about-list-item">
+              <span class="about-list-icon">🧮</span>
+              <p data-i18n="about_item_2">Путается в датах, формулах, терминах и определениях</p>
+            </div>
+
+            <div class="about-list-item">
+              <span class="about-list-icon">💬</span>
+              <p data-i18n="about_item_3">Читает текст, но потом не может пересказать главное</p>
+            </div>
+          </div>
+
+          <div class="about-bottom-note">
+            <span>🎓</span>
+            <p data-i18n="about_note">Подходит для <strong>учебы, языков и подготовки к школе</strong></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section-pad program" id="program">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-eyebrow" data-i18n="program_badge">Программа курса</div>
+          <h2 data-i18n="program_title"><span class="program-title-accent">4 модуля</span>, которые учат запоминать</h2>
+        </div>
+
+        <div class="program-modules">
+          <article class="module-step module-blue reveal">
+            <span class="module-number">01</span>
+            <div class="module-visual module-brain" aria-hidden="true">
+              <span class="module-emoji">🧠</span>
+            </div>
+            <div class="module-content">
+              <span class="module-label" data-i18n="module1_label">Модуль 1</span>
+              <h3 data-i18n="module1_title">Как работает память</h3>
+              <strong data-i18n="module1_subtitle">Базовые принципы запоминания</strong>
+              <p data-i18n="module1_text">Разберем, почему информация быстро забывается и как запоминать через образы, ассоциации и связи, а не через механическую зубрежку.</p>
+            </div>
+          </article>
+
+          <span class="module-arrow arrow-1-2" aria-hidden="true">→</span>
+
+          <article class="module-step module-orange reveal">
+            <span class="module-number">02</span>
+            <div class="module-visual module-book" aria-hidden="true">
+              <span class="module-emoji">📖</span>
+            </div>
+            <div class="module-content">
+              <span class="module-label" data-i18n="module2_label">Модуль 2</span>
+              <h3 data-i18n="module2_title">Слова, термины и определения</h3>
+              <strong data-i18n="module2_subtitle">Как запоминать сложную информацию</strong>
+              <p data-i18n="module2_text">Ребенок научится запоминать иностранные слова, школьные термины, названия, правила и определения с помощью понятных техник памяти.</p>
+            </div>
+          </article>
+
+          <article class="module-step module-blue reveal">
+            <span class="module-number">03</span>
+            <div class="module-visual module-numbers" aria-hidden="true">
+              <span class="module-emoji">🔢</span>
+            </div>
+            <div class="module-content">
+              <span class="module-label" data-i18n="module3_label">Модуль 3</span>
+              <h3 data-i18n="module3_title">Числа, даты и формулы</h3>
+              <strong data-i18n="module3_subtitle">Запоминание без путаницы</strong>
+              <p data-i18n="module3_text">Разберем, как запоминать даты, числа, формулы и сложные обозначения через логику, образы и опорные связи.</p>
+            </div>
+          </article>
+
+          <span class="module-arrow arrow-3-4" aria-hidden="true">→</span>
+
+          <article class="module-step module-orange reveal">
+            <span class="module-number">04</span>
+            <div class="module-visual module-globe" aria-hidden="true">
+              <span class="module-emoji">🌍</span>
+            </div>
+            <div class="module-content">
+              <span class="module-label" data-i18n="module4_label">Модуль 4</span>
+              <h3 data-i18n="module4_title">Тексты, языки и школьные темы</h3>
+              <strong data-i18n="module4_subtitle">Применение техник в учебе</strong>
+              <p data-i18n="module4_text">Потренируем, как использовать техники памяти для пересказа текстов, конспектов, домашних заданий, иностранных слов и подготовки к урокам.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad soft" id="teacher">
+      <div class="container teacher-card reveal">
+        <a class="youtube-preview teacher-video" href="https://www.youtube.com/watch?v=MwusUcJB0NE&t=2s" target="_blank" rel="noopener" aria-label="Смотреть видео Алексея Бессонова на YouTube">
+          <img src="assets/teacher-cover-blue.png" alt="Видео от Алексея Бессонова" />
+          <span class="youtube-play"></span>
+          <span class="youtube-caption">
+            <strong data-i18n="video_alex">Алексей Бессонов на шоу “Дивовижні люди”</strong>
+            <small data-i18n="teacher_video_note">О себе, формате курса и том, как проходят занятия</small>
+          </span>
+        </a>
+        <div class="teacher-copy">
+          <h2 data-i18n="teacher_title">Кто <span>ведет</span> курс</h2>
+          <p data-i18n="teacher_p1"><strong>Алексей Бессонов</strong> - чемпион Украины по запоминанию, тренер по развитию памяти и эффективному обучению, рекордсмен Книги рекордов Украины, автор книг и создатель курсов “Суперпамять” и “Полиглот”.</p>
+          <p data-i18n="teacher_p2">Алексей много лет помогает детям и взрослым развивать память, легче учить иностранные языки, лучше работать с информацией и применять техники запоминания в реальной учебе.</p>
+          <div class="teacher-stats">
+            <div><strong data-i18n="teacher_stat_1">15+ лет</strong><span data-i18n="teacher_stat_1_text">опыта</span></div>
+            <div><strong data-i18n="teacher_stat_2">Автор</strong><span data-i18n="teacher_stat_2_text">курсов</span></div>
+            <div><strong data-i18n="teacher_stat_3">Практика</strong><span data-i18n="teacher_stat_3_text">для школьных предметов</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad pricing" id="formats">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 data-i18n="pricing_title">Выберите <span>формат</span> обучения</h2>
+          <p data-i18n="pricing_lead">Три формата: самостоятельный, с поддержкой или персональный.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="price-card reveal">
+            <div class="tag tag-blue" data-i18n="tag_self">Самостоятельно</div>
+            <img class="price-image" src="assets/pricing-recorded.png" alt="Курс в записи" />
+            <h3 data-i18n="price1_title">Курс в записи</h3>
+            <div class="price"><span>79 €</span><small data-i18n="price_all_course">за весь курс</small></div>
+            <p class="price-desc" data-i18n="price1_desc">Для занятий в удобном темпе.</p>
+            <ul class="check-list compact">
+              <li data-i18n="price1_li1">24 коротких видеоурока</li>
+              <li data-i18n="price1_li2">практические задания</li>
+              <li data-i18n="price1_li3">рабочая тетрадь</li>
+              <li data-i18n="price1_li4">материалы курса</li>
+              <li data-i18n="price1_li5">онлайн-встреча вопрос-ответ</li>
+            </ul>
+            <a class="btn btn-outline" href="#contact" data-i18n="price1_btn">Купить запись</a>
+          </article>
+
+          <article class="price-card recommended reveal">
+            <div class="recommend-badge" data-i18n="recommended">Рекомендуемый формат</div>
+            <div class="tag tag-orange" data-i18n="tag_support">С поддержкой</div>
+            <img class="price-image" src="assets/pricing-group.png" alt="Онлайн-курс в мини-группе" />
+            <h3 data-i18n="price2_title">Онлайн-курс в мини-группе</h3>
+            <div class="price-split">
+              <div><span>15 €</span><small data-i18n="per_lesson">за занятие</small></div>
+              <div><span>119 €</span><small data-i18n="per_course">за курс</small></div>
+            </div>
+            <p class="price-desc" data-i18n="price2_desc">Живые занятия, практика и обратная связь.</p>
+            <div class="price-meta">
+              <span data-i18n="price2_meta1">Формат: онлайн, мини-группа</span>
+              <span data-i18n="price2_meta2">Длительность занятия: до 90 минут</span>
+            </div>
+            <ul class="check-list compact orange">
+              <li data-i18n="price2_li1">8 онлайн-занятий</li>
+              <li data-i18n="price2_li2">задания после встреч</li>
+              <li data-i18n="price2_li3">ответы на вопросы</li>
+              <li data-i18n="price2_li4">материалы для родителей</li>
+            </ul>
+            <a class="btn btn-primary" href="#contact" data-i18n="price2_btn">Записаться</a>
+          </article>
+
+          <article class="price-card reveal">
+            <div class="tag tag-blue" data-i18n="tag_personal">Персонально</div>
+            <img class="price-image" src="assets/pricing-personal.png" alt="Индивидуальная программа" />
+            <h3 data-i18n="price3_title">Индивидуальная программа</h3>
+            <div class="price"><span>499 €</span><small data-i18n="per_program">за программу</small></div>
+            <p class="price-desc" data-i18n="price3_desc">Персональная работа под задачи ребенка, темп и школьные сложности.</p>
+            <div class="price-note" data-i18n="price3_note">+ входят материалы записи и мини-группы</div>
+            <ul class="check-list compact">
+              <li data-i18n="price3_li1">диагностика и план занятий</li>
+              <li data-i18n="price3_li2">работа с языками, текстами и формулами</li>
+              <li data-i18n="price3_li3">персональные занятия с Алексеем</li>
+              <li data-i18n="price3_li4">индивидуальные рекомендации родителям</li>
+            </ul>
+            <a class="btn btn-outline" href="#contact" data-i18n="price3_btn">Обсудить программу</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad reviews" id="reviews">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 data-i18n="reviews_title"><span>Отзывы</span> родителей</h2>
+          <p data-i18n="reviews_lead">Посмотрите, как родители оценивают занятия по развитию памяти и обучению.</p>
+        </div>
+        <div class="reviews-grid">
+          <a class="youtube-preview review-video reveal" href="https://www.youtube.com/watch?v=fufXn19Rsk8" target="_blank" rel="noopener" aria-label="Смотреть видеоотзыв на YouTube">
+            <img src="assets/review-cover-gray.png" alt="Видеоотзыв о курсе" />
+            <span class="youtube-play"></span>
+            <span class="youtube-caption">
+              <strong data-i18n="review_video">Видеоотзыв</strong>
+              <small data-i18n="watch_youtube">Смотреть на YouTube</small>
+            </span>
+          </a>
+          <div class="review-cards">
+            <article class="review-card reveal">
+              <div class="review-author">
+                <a class="elena-avatar-link" href="https://www.youtube.com/watch?v=OD-u9cspWpk" target="_blank" rel="noopener" aria-label="Смотреть видеоотзыв Алены"><img src="assets/elena-card-avatar.png" alt="Алена" /></a>
+                <div>
+                  <strong data-i18n="review_name_elena">Алена</strong>
+                </div>
+              </div>
+              <div class="stars">★★★★★</div>
+              <p data-i18n="review_text_elena">Ребенку стало легче учить слова и увереннее отвечать в школе.</p>
+            <a class="review-video-link" href="https://www.youtube.com/watch?v=OD-u9cspWpk" target="_blank" rel="noopener">Смотреть видеоотзыв</a>
+            </article>
+            <article class="review-card reveal">
+              <div class="review-author">
+                <img src="assets/tatiana-practice-avatar.png" alt="Татьяна" />
+                <div>
+                  <strong data-i18n="review_name_maria">Татьяна</strong>
+                </div>
+              </div>
+              <div class="stars">★★★★★</div>
+              <p data-i18n="review_text_maria">Понравилось, что на курсе много практики, а не только теория.</p><a class="review-video-link" href="https://www.youtube.com/watch?v=lrdF2HD3YnE" target="_blank" rel="noopener">Смотреть видеоотзыв</a>
+            </article>
+            <article class="review-card wide reveal">
+              <div class="review-author">
+                <img src="assets/tatiana-olga-card-avatar.png" alt="Татьяна" />
+                <div>
+                  <strong data-i18n="review_name_olga">Татьяна</strong>
+                </div>
+              </div>
+              <div class="stars">★★★★★</div>
+              <p data-i18n="review_text_olga">После курса сыну стало легче готовиться к контрольным и пересказывать тексты.</p><a class="review-video-link" href="https://www.youtube.com/watch?v=0feD5_FLENw" target="_blank" rel="noopener">Смотреть видеоотзыв</a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad" id="result">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 data-i18n="result_title">Что <span>изменится</span> после курса</h2>
+          <p data-i18n="result_lead">Ребенок учится не просто повторять, а понимать, как именно запоминать.</p>
+        </div>
+        <div class="cards-grid four">
+          <article class="result-card reveal">
+            <span class="card-icon">💡</span>
+            <h3 data-i18n="result1_title">Поймет систему</h3>
+            <p data-i18n="result1_text">Научится превращать сложную информацию в образы, связи и понятные подсказки.</p>
+          </article>
+          <article class="result-card reveal">
+            <span class="card-icon">🔤</span>
+            <h3 data-i18n="result2_title">Быстрее слова и термины</h3>
+            <p data-i18n="result2_text">Разберет техники для языков, истории, биологии и других школьных предметов.</p>
+          </article>
+          <article class="result-card reveal">
+            <span class="card-icon">📝</span>
+            <h3 data-i18n="result3_title">Лучше работа с текстами</h3>
+            <p data-i18n="result3_text">Научится выделять главное, запоминать структуру текста и готовиться к пересказам.</p>
+          </article>
+          <article class="result-card reveal">
+            <span class="card-icon">🛡️</span>
+            <h3 data-i18n="result4_title">Больше уверенности</h3>
+            <p data-i18n="result4_text">Когда есть понятный способ учить, ребенку проще начинать задания и готовиться к проверкам.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="section-pad social-proof-section" id="socials">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 data-i18n="social_title">Больше полезного <span>в соцсетях</span></h2>
+          <p data-i18n="social_lead">Алексей делится приемами запоминания, примерами для учебы и материалами для родителей.</p>
+        </div>
+
+        <div class="social-proof-grid">
+          <a class="social-proof-card social-proof-youtube reveal" href="https://www.youtube.com/watch?v=dfg5up5M63g" target="_blank" rel="noopener">
+            <div class="social-proof-top">
+              <span class="social-proof-icon"><img src="assets/icon-youtube.png" alt="YouTube" /></span>
+              <div>
+                <strong>YouTube</strong>
+                <small data-i18n="youtube_stats">18.2 тыс. подписчиков · 256 видео</small>
+              </div>
+            </div>
+            <div class="social-proof-preview">
+              <img src="https://img.youtube.com/vi/dfg5up5M63g/hqdefault.jpg" alt="Видео о запоминании" />
+              <span data-i18n="watch_video">Смотреть видео</span>
+            </div>
+            <p data-i18n="youtube_text">Видео о том, как работает запоминание и почему техники помогают учиться легче.</p>
+          </a>
+
+          <a class="social-proof-card social-proof-telegram reveal" href="https://t.me/LuckBesson" target="_blank" rel="noopener">
+            <div class="social-proof-top">
+              <span class="social-proof-icon"><img src="assets/icon-telegram.png" alt="Telegram" /></span>
+              <div>
+                <strong>Telegram</strong>
+                <small data-i18n="telegram_meta">3 618 подписчиков</small>
+              </div>
+            </div>
+            <div class="social-proof-mini">
+              <span>🧠</span>
+              <strong data-i18n="telegram_card_title">Короткие советы, примеры и материалы</strong>
+            </div>
+            <p data-i18n="telegram_text">Удобно следить за новыми разборами, техниками и полезными материалами по обучению.</p>
+          </a>
+
+          <a class="social-proof-card social-proof-instagram reveal" href="https://www.instagram.com/luckbessonov" target="_blank" rel="noopener">
+            <div class="social-proof-top">
+              <span class="social-proof-icon"><img src="assets/icon-instagram.png" alt="Instagram" /></span>
+              <div>
+                <strong>Instagram</strong>
+                <small data-i18n="instagram_meta">5 319 подписчиков</small>
+              </div>
+            </div>
+            <div class="social-proof-mini">
+              <span>✨</span>
+              <strong data-i18n="instagram_card_title">Живой формат и короткие идеи для учебы</strong>
+            </div>
+            <p data-i18n="instagram_text">Можно посмотреть новости, короткие видео и больше узнать о подходе Алексея.</p>
+          </a>
+
+          <a class="social-proof-card social-proof-facebook reveal" href="https://www.facebook.com/luckbessonov" target="_blank" rel="noopener">
+            <div class="social-proof-top">
+              <span class="social-proof-icon"><img src="assets/icon-facebook.png" alt="Facebook" /></span>
+              <div>
+                <strong>Facebook</strong>
+                <small data-i18n="facebook_meta">7 412 подписчиков</small>
+              </div>
+            </div>
+            <div class="social-proof-mini">
+              <span>📘</span>
+              <strong data-i18n="facebook_card_title">Больше материалов о памяти и обучении</strong>
+            </div>
+            <p data-i18n="facebook_text">Еще один удобный канал, чтобы следить за новостями, видео и полезными публикациями Алексея.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad faq" id="faq">
+      <div class="container faq-grid">
+        <div class="faq-copy reveal">
+          <h2 data-i18n="faq_title">Частые <span>вопросы</span></h2>
+          <div class="accordion">
+            <button class="accordion-item is-open" type="button"><span data-i18n="faq_q1">Для какого возраста курс?</span><b>⌄</b></button>
+            <div class="accordion-panel open" data-i18n="faq_a1">Курс подходит для школьников ESO и Bachillerato, примерно 12-18 лет.</div>
+            <button class="accordion-item" type="button"><span data-i18n="faq_q2">Это больше теория или практика?</span><b>⌄</b></button>
+            <div class="accordion-panel" data-i18n="faq_a2">Это практический курс. Дети сразу тренируются запоминать слова, даты, формулы и тексты.</div>
+            <button class="accordion-item" type="button"><span data-i18n="faq_q3">Сколько длится занятие?</span><b>⌄</b></button>
+            <div class="accordion-panel" data-i18n="faq_a3">В онлайн-формате занятие длится до 90 минут. В записи уроки короткие, по 10-15 минут.</div>
+            <button class="accordion-item" type="button"><span data-i18n="faq_q4">Нужен ли родитель на занятиях?</span><b>⌄</b></button>
+            <div class="accordion-panel" data-i18n="faq_a4">На детских занятиях родитель не обязан присутствовать. Для родителей предусмотрена отдельная встреча или рекомендации.</div>
+          </div>
+        </div>
+        <div class="faq-visual reveal" aria-hidden="true">
+          <span>🧠</span>
+          <strong data-i18n="faq_visual_title">Память - это навык</strong>
+          <small data-i18n="faq_visual_text">Его можно тренировать через понятные приемы и практику</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-card contact-card-centered reveal">
+          <div class="contact-intro">
+            <h2 data-i18n="contact_title">Остались <span>вопросы?</span></h2>
+            <p data-i18n="contact_lead">Напишите нам, поможем выбрать подходящий формат обучения для вашего ребенка.</p>
+
+            <a class="telegram-link" href="https://t.me/LuckBesson" target="_blank" rel="noopener">
+              <span><img src="assets/icon-telegram.png" alt="Telegram" /></span>
+              <strong data-i18n="telegram_cta">Пишите мне в Telegram</strong>
+            </a>
+
+            <div class="contact-details" aria-label="Контактная информация">
+              <div class="contact-detail">
+                <span>📍</span>
+                <strong>Valencia / Online</strong>
+              </div>
+
+              <a class="contact-detail" href="tel:+380935525737">
+                <span>☎</span>
+                <strong>+380935525737</strong>
+              </a>
+
+              <a class="contact-detail" href="mailto:luckbessonov2@gmail.com">
+                <span>✉</span>
+                <strong>luckbessonov2@gmail.com</strong>
+              </a>
+            </div>
+          </div>
+
+          <form class="contact-form" action="#" method="post">
+            <label>
+              <span data-i18n="form_question">Ваш вопрос</span>
+              <textarea name="question" placeholder="Опишите ваш вопрос..." data-i18n-placeholder="question_placeholder"></textarea>
+            </label>
+            <div class="form-row">
+              <label><span data-i18n="form_email">Email</span><input type="email" name="email" placeholder="name@email.com" /></label>
+              <label><span data-i18n="form_phone">Телефон</span><input type="tel" name="phone" placeholder="+34 600 123 456" /></label>
+            </div>
+            <button class="btn btn-primary" type="submit" data-i18n="form_send">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer site-footer-simple">
+    <div class="container footer-bottom footer-bottom-centered">
+      <span>© Секреты памяти</span>
+      <button class="footer-top" type="button" data-scroll-top data-i18n="footer_top">Наверх ↑</button>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" data-scroll-top aria-label="Наверх">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
